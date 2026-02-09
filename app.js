@@ -6,7 +6,7 @@ const combos = [
         meter: 2,
         starter: 'crMP',
         image: 'images/ryu_3drive_2meter_crMP.png',
-        damage: '4200' // optional
+        damage: '4200'
     },
     {
         character: 'ryu',
@@ -24,7 +24,6 @@ const combos = [
         image: 'images/ken_2drive_0meter_crMK.png',
         damage: '3200'
     }
-    // Add all 30+ combos per character here
 ];
 
 // Get filter elements
@@ -82,17 +81,3 @@ starterFilter.addEventListener('change', filterCombos);
 
 // Initial display - show all combos on load
 displayResults(combos);
-```
-
-**Folder structure:**
-```
-your-repo/
-├── index.html
-├── style.css
-├── app.js
-└── images/
-    ├── ryu_3drive_2meter_crMP.png
-    ├── ryu_0drive_1meter_HP.png
-    ├── ken_2drive_0meter_crMK.png
-
-    └── ... (all your combo images)
