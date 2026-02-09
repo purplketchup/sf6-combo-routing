@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Combo Route Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Street Fighter Combo Routes</h1>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="character">Character:</label>
+                <select id="character">
+                    <option value="">All</option>
+                    <option value="ryu">Ryu</option>
+                    <option value="ken">Ken</option>
+                    <option value="chun-li">Chun-Li</option>
+                    <!-- Add more characters -->
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="drive">Drive Gauge:</label>
+                <select id="drive">
+                    <option value="">Any</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="meter">Super Meter:</label>
+                <select id="meter">
+                    <option value="">Any</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="starter">Starting Normal:</label>
+                <select id="starter">
+                    <option value="">Any</option>
+                    <option value="LP">LP</option>
+                    <option value="MP">MP</option>
+                    <option value="HP">HP</option>
+                    <option value="LK">LK</option>
+                    <option value="MK">MK</option>
+                    <option value="HK">HK</option>
+                    <option value="crLP">cr.LP</option>
+                    <option value="crMP">cr.MP</option>
+                    <option value="crHP">cr.HP</option>
+                    <option value="crLK">cr.LK</option>
+                    <option value="crMK">cr.MK</option>
+                    <option value="crHK">cr.HK</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="results">
+            <p class="no-results">Select filters to find combo routes</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
